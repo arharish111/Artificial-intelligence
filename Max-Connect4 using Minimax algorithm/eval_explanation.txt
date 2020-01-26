@@ -1,0 +1,24 @@
+Eval function:
+
+The formula for eval value is as below:
+
+Eval value = number of rows,columns and diagonals available to max player - number of rows,columns and diagonals available to min player.
+
+For example a row with values 0,0,0,1,0,0,0 is available to player, playing with coins numbered 1. So, a point of one will be given to this player.
+Opposite player will not get any points because by placing his coins in any of the columns will not allow him to make continuous four.
+
+Whereas a row having values 1,0,0,0,0,0,0 will allow both players to make continuous four. Hence a point of one will be given to both players.
+
+Similarly, when a row or column or diagonal is completely filled up with the coins and there is no empty place left, then neither of the players
+will get a point.
+
+0000000
+0000000
+0000000
+0000000
+2000000
+1000000
+1
+
+In the above game broad, there are six, seven and twelve rows,columns and diagonals respectively are available for both players to make 
+continous four. Hence the eval value will be 0(i.e., 25-25).
